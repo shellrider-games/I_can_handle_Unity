@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,23 +6,37 @@ using UnityEngine.InputSystem;
 
 public class CameraMovement : MonoBehaviour
 {
+    [SerializeField] private Transform target;
     [SerializeField] private float minimumDistanceToTarget;
     [SerializeField] private float maximumDistanceToTarget;
     [SerializeField] private float zoomSpeed = 0.01f;
 
-    private Vector3 _zoomDirection;
+    private float _distanceToTarget;
+    private float _orbitAngle;
 
     // Start is called before the first frame update
     void Awake()
     {
-        _zoomDirection = transform.position.normalized;
+        _distanceToTarget = 3f;
     }
 
-    void OnMoveToPlayer(InputValue value)
+    void OnCameraMovement(InputValue value)
     {
         var inputVector = value.Get<Vector2>();
-        var newPosition = transform.localPosition - (inputVector.y * zoomSpeed * _zoomDirection);
-        if (newPosition.magnitude >= minimumDistanceToTarget && newPosition.magnitude <= maximumDistanceToTarget)
-            transform.localPosition = newPosition;
+        _orbitAngle -= inputVector.x % 360;
+        float newDistance = _distanceToTarget + inputVector.y * zoomSpeed;
+        if (newDistance >= minimumDistanceToTarget && newDistance <= maximumDistanceToTarget)
+            _distanceToTarget = newDistance;
+    }
+
+    private void Update()
+    {
+        float radians = Mathf.Deg2Rad * (_orbitAngle-90);
+        var x = target.position.x + _distanceToTarget *Mathf.Cos(radians);
+        var y = target.position.y + 1.25f + (_distanceToTarget - minimumDistanceToTarget) /
+            (maximumDistanceToTarget - minimumDistanceToTarget);
+        var z = target.position.z + _distanceToTarget * Mathf.Sin(radians);
+        transform.position = new Vector3(x, y, z);
+        transform.LookAt(target);
     }
 }

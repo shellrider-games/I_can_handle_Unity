@@ -173,7 +173,7 @@
             "id": "fd594445-eb43-47e7-967f-3175ca6e1c89",
             "actions": [
                 {
-                    "name": "MoveToPlayer",
+                    "name": "CameraMovement",
                     "type": "Value",
                     "id": "34367a37-0295-4577-b47e-1c8c7c15361d",
                     "expectedControlType": "Vector2",
@@ -190,7 +190,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "MoveToPlayer",
+                    "action": "CameraMovement",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

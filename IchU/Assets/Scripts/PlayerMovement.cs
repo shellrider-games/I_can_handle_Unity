@@ -8,16 +8,18 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 1f;
     [SerializeField] private float jumpForce = 1f;
+
+    [SerializeField] private Transform camera;
         
     private Vector3 _movementInput;
     private Rigidbody _rigidbody;
-    private BoxCollider _collider;
+    private CapsuleCollider _collider;
     
     private bool Grounded()
     {
         RaycastHit hit;
         Ray groundCheck = new Ray(transform.position, Vector3.down);
-        if (Physics.Raycast(groundCheck, out hit, 0.6f))
+        if (Physics.Raycast(groundCheck, out hit, _collider.height/2 + 0.1f))
         {
             if (hit.collider.CompareTag("Ground")) return true;
         }
@@ -28,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
-        _collider = GetComponent<BoxCollider>();
+        _collider = GetComponent<CapsuleCollider>();
     }
 
 
@@ -36,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(speed * Time.deltaTime * _movementInput);
+        transform.forward = new Vector3(camera.forward.x, 0, camera.forward.z);
     }
 
     void OnMovement(InputValue value)
@@ -43,13 +46,7 @@ public class PlayerMovement : MonoBehaviour
         var inputVector = value.Get<Vector2>();
         _movementInput = new Vector3(inputVector.x, 0, inputVector.y);
     }
-
-    void OnRotate(InputValue value)
-    {
-        var inputVector = value.Get<Vector2>();
-        transform.Rotate(0, inputVector.x, 0);
-    }
-
+    
     void OnJump()
     {
         if(Grounded()) _rigidbody.AddForce(jumpForce * Vector3.up);
