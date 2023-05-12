@@ -9,6 +9,8 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField] private float minimumDistanceToTarget;
     [SerializeField] private float maximumDistanceToTarget;
+    [SerializeField] private Vector3 cameraOffset;
+    
     [SerializeField] private float zoomSpeed = 0.01f;
 
     private float _distanceToTarget;
@@ -24,7 +26,7 @@ public class CameraMovement : MonoBehaviour
     {
         var inputVector = value.Get<Vector2>();
         _orbitAngle -= inputVector.x % 360;
-        float newDistance = _distanceToTarget + inputVector.y * zoomSpeed;
+        float newDistance = _distanceToTarget - inputVector.y * zoomSpeed;
         if (newDistance >= minimumDistanceToTarget && newDistance <= maximumDistanceToTarget)
             _distanceToTarget = newDistance;
     }
@@ -33,10 +35,10 @@ public class CameraMovement : MonoBehaviour
     {
         float radians = Mathf.Deg2Rad * (_orbitAngle-90);
         var x = target.position.x + _distanceToTarget *Mathf.Cos(radians);
-        var y = target.position.y + 1.25f + (_distanceToTarget - minimumDistanceToTarget) /
+        var y = target.position.y + 2.5f + 2 * (_distanceToTarget - minimumDistanceToTarget) /
             (maximumDistanceToTarget - minimumDistanceToTarget);
         var z = target.position.z + _distanceToTarget * Mathf.Sin(radians);
         transform.position = new Vector3(x, y, z);
-        transform.LookAt(target);
+        transform.LookAt(target.position+new Vector3(Mathf.Cos(radians)*cameraOffset.x, cameraOffset.y, Mathf.Sin(radians)*cameraOffset.z));
     }
 }

@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 1f;
     [SerializeField] private float jumpForce = 1f;
 
-    [SerializeField] private Transform camera;
+    [FormerlySerializedAs("camera")] [SerializeField] private Transform cameraTransform;
         
     private Vector3 _movementInput;
     private Rigidbody _rigidbody;
@@ -38,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(speed * Time.deltaTime * _movementInput);
-        transform.forward = new Vector3(camera.forward.x, 0, camera.forward.z);
+        transform.forward = new Vector3(cameraTransform.forward.x, 0, cameraTransform.forward.z);
     }
 
     void OnMovement(InputValue value)
