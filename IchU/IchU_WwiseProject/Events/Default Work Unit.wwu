@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="ui_button_click" ID="{A0F74A11-5145-46FB-8B2B-F1D3D0617518}">
+					<ChildrenList>
+						<Action Name="" ID="{6BB64FBA-79AC-4EBF-BA8B-7A6FC551EDC8}" ShortID="151039672">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Minimalist2" ID="{27DBB8A3-699B-4E14-BBBE-6AD5FE7221EC}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="suburb_ambience" ID="{C8F182BA-B56A-449A-98F3-6EDC18B14116}">
+					<ChildrenList>
+						<Action Name="" ID="{17BB0C00-A487-4B03-AE3D-A38234677583}" ShortID="327792001">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="suburbAmbience" ID="{A4BA2C61-BBE5-42AB-B465-1B6EC99BB7F4}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="step" ID="{3DC50BDA-9454-4A55-A60D-F3ADEF065D67}">
+					<ChildrenList>
+						<Action Name="" ID="{48C345AC-C81C-4CD0-ABAA-B69DEB2E3DEC}" ShortID="866008376">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="stepSwitch" ID="{71F31B01-BB4A-4726-852A-EA1D6FAAC110}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="jump" ID="{E32B0F3D-61C2-484E-BB07-AD7D5E42A129}">
+					<ChildrenList>
+						<Action Name="" ID="{26AC11C1-016D-42C2-BE10-FEB593CF85A8}" ShortID="838584241">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="annieJump" ID="{19D331ED-1542-44D8-8C3D-C06B036B3950}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

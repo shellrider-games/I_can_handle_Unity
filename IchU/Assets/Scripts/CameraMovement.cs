@@ -35,7 +35,7 @@ public class CameraMovement : MonoBehaviour
     {
         float radians = Mathf.Deg2Rad * (_orbitAngle-90);
         var x = target.position.x + _distanceToTarget *Mathf.Cos(radians);
-        var y = target.position.y + 2.5f + 2 * (_distanceToTarget - minimumDistanceToTarget) /
+        var y = target.position.y + 1.5f + 2 * (_distanceToTarget - minimumDistanceToTarget) /
             (maximumDistanceToTarget - minimumDistanceToTarget);
         var z = target.position.z + _distanceToTarget * Mathf.Sin(radians);
         transform.position = new Vector3(x, y, z);

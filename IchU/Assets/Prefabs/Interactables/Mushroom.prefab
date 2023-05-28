@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 3432444348396327828}
   - component: {fileID: 9160326205937751781}
   - component: {fileID: 2877419223931956115}
+  - component: {fileID: 238349997134941377}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: HealthCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,6 +102,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &238349997134941377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909925526969786928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd214b0dbd605754d819b1aaa8c1134e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8798775063502310466
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,9 +126,11 @@ GameObject:
   - component: {fileID: 8798775063502310476}
   - component: {fileID: 262255677475456228}
   - component: {fileID: 8408492103570448559}
+  - component: {fileID: 5772290742034810674}
+  - component: {fileID: 5116617787362351891}
   m_Layer: 0
   m_Name: Mushroom
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,6 +190,32 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4be1e09d1a95b54468eaf5bab3ffd2c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5772290742034810674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8798775063502310466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adcc6191bb50a0849839db2f3a520e4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 10
+  healthbar: {fileID: 8045269823753497314}
+--- !u!114 &5116617787362351891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8798775063502310466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec3e6ee85164e94682fa503eba20d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8993263483637831789
@@ -244,10 +285,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 83b259e17e3966840bd8e9a7266fb5a0, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 0
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -319,6 +360,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c87ee121bc2ad904aa9c8878a00a07a4, type: 3}
       propertyPath: m_Name
       value: mushroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c87ee121bc2ad904aa9c8878a00a07a4, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c87ee121bc2ad904aa9c8878a00a07a4, type: 3}

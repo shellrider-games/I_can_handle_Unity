@@ -9,9 +9,10 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 1f;
     [SerializeField] private float jumpForce = 1f;
+    [SerializeField] private Animator _animator;
+    [SerializeField] private PlayerAudioManager _audioManager;
 
-    [FormerlySerializedAs("camera")] [SerializeField] private Transform cameraTransform;
-        
+    private Transform _cameraTransform;
     private Vector3 _movementInput;
     private Rigidbody _rigidbody;
     private CapsuleCollider _collider;
@@ -32,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody>();
         _collider = GetComponent<CapsuleCollider>();
+        _cameraTransform = Camera.main.transform;
     }
 
 
@@ -39,7 +41,8 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         transform.Translate(speed * Time.deltaTime * _movementInput);
-        transform.forward = new Vector3(cameraTransform.forward.x, 0, cameraTransform.forward.z);
+        transform.forward = new Vector3(_cameraTransform.forward.x, 0, _cameraTransform.forward.z);
+        UpdateAnimationState();
     }
 
     void OnMovement(InputValue value)
@@ -47,9 +50,19 @@ public class PlayerMovement : MonoBehaviour
         var inputVector = value.Get<Vector2>();
         _movementInput = new Vector3(inputVector.x, 0, inputVector.y);
     }
+
+    private void UpdateAnimationState()
+    {
+        _animator.SetBool("grounded", Grounded());
+        _animator.SetBool("walking", _movementInput != Vector3.zero);
+    }
     
     void OnJump()
     {
-        if(Grounded()) _rigidbody.AddForce(jumpForce * Vector3.up);
+        if (Grounded())
+        {
+            _rigidbody.AddForce(jumpForce * Vector3.up);
+            _audioManager.PostJumpEvent();
+        }
     }
 }

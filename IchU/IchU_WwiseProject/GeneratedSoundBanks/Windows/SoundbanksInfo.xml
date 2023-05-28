@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="3832694011">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="3627324182">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3833651337" Name="jump" ObjectPath="\Events\Default Work Unit\jump" DurationType="OneShot" DurationMin="1.26916" DurationMax="1.26916">
+					<IncludedMemoryFiles>
+						<File Id="436172419" Language="SFX">
+							<ShortName>annieJump.wav</ShortName>
+							<Path>SFX\annieJump_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="621108255" Name="step" ObjectPath="\Events\Default Work Unit\step" DurationType="OneShot" DurationMin="0.129083" DurationMax="0.298208">
+					<IncludedMemoryFiles>
+						<File Id="48274193" Language="SFX">
+							<ShortName>boots\0.wav</ShortName>
+							<Path>SFX\boots\0_10C4C929.wem</Path>
+						</File>
+						<File Id="192013112" Language="SFX">
+							<ShortName>steps\groundstep3.wav</ShortName>
+							<Path>SFX\steps\groundstep3_10C4C929.wem</Path>
+						</File>
+						<File Id="211972039" Language="SFX">
+							<ShortName>boots\4.wav</ShortName>
+							<Path>SFX\boots\4_10C4C929.wem</Path>
+						</File>
+						<File Id="342539566" Language="SFX">
+							<ShortName>boots\6.wav</ShortName>
+							<Path>SFX\boots\6_10C4C929.wem</Path>
+						</File>
+						<File Id="414578594" Language="SFX">
+							<ShortName>steps\groundstep2.wav</ShortName>
+							<Path>SFX\steps\groundstep2_10C4C929.wem</Path>
+						</File>
+						<File Id="523786268" Language="SFX">
+							<ShortName>steps\groundstep1.wav</ShortName>
+							<Path>SFX\steps\groundstep1_10C4C929.wem</Path>
+						</File>
+						<File Id="578610758" Language="SFX">
+							<ShortName>boots\3.wav</ShortName>
+							<Path>SFX\boots\3_10C4C929.wem</Path>
+						</File>
+						<File Id="635765426" Language="SFX">
+							<ShortName>boots\1.wav</ShortName>
+							<Path>SFX\boots\1_10C4C929.wem</Path>
+						</File>
+						<File Id="694653774" Language="SFX">
+							<ShortName>boots\7.wav</ShortName>
+							<Path>SFX\boots\7_10C4C929.wem</Path>
+						</File>
+						<File Id="710223311" Language="SFX">
+							<ShortName>boots\5.wav</ShortName>
+							<Path>SFX\boots\5_10C4C929.wem</Path>
+						</File>
+						<File Id="819981975" Language="SFX">
+							<ShortName>boots\2.wav</ShortName>
+							<Path>SFX\boots\2_10C4C929.wem</Path>
+						</File>
+						<File Id="852040016" Language="SFX">
+							<ShortName>boots\8.wav</ShortName>
+							<Path>SFX\boots\8_10C4C929.wem</Path>
+						</File>
+						<File Id="872779969" Language="SFX">
+							<ShortName>steps\groundstep5.wav</ShortName>
+							<Path>SFX\steps\groundstep5_10C4C929.wem</Path>
+						</File>
+						<File Id="1063678928" Language="SFX">
+							<ShortName>steps\groundstep4.wav</ShortName>
+							<Path>SFX\steps\groundstep4_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{E20310CB-4056-4F97-AA49-7A0E519DD20A}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{F7EA0190-C0C4-44CE-8CA1-4E1E704E0029}">
+							<Media>
+								<File Id="192013112"/>
+								<File Id="414578594"/>
+								<File Id="523786268"/>
+								<File Id="872779969"/>
+								<File Id="1063678928"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E20310CB-4056-4F97-AA49-7A0E519DD20A}">
+							<Media>
+								<File Id="48274193"/>
+								<File Id="211972039"/>
+								<File Id="342539566"/>
+								<File Id="578610758"/>
+								<File Id="635765426"/>
+								<File Id="694653774"/>
+								<File Id="710223311"/>
+								<File Id="819981975"/>
+								<File Id="852040016"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="4152676669" Name="suburb_ambience" ObjectPath="\Events\Default Work Unit\suburb_ambience" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="843975111" Language="SFX">
+							<ShortName>suburbBackground.wav</ShortName>
+							<Path>SFX\suburbBackground_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1664509575" Name="ui_button_click" ObjectPath="\Events\Default Work Unit\ui_button_click" DurationType="OneShot" DurationMin="0.756258" DurationMax="0.756258">
+					<IncludedMemoryFiles>
+						<File Id="750838162" Language="SFX">
+							<ShortName>WAV\Minimalist2.wav</ShortName>
+							<Path>SFX\WAV\Minimalist2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="2172358596" Name="stepArea" ObjectPath="\Switches\Default Work Unit\stepArea" GUID="{EDFB800E-DE03-4EE0-96F3-25F22000B623}">
+					<Switches>
+						<Switch Id="841620460" Name="concrete" ObjectPath="\Switches\Default Work Unit\stepArea\concrete" GUID="{E20310CB-4056-4F97-AA49-7A0E519DD20A}"/>
+						<Switch Id="4248645337" Name="grass" ObjectPath="\Switches\Default Work Unit\stepArea\grass" GUID="{F7EA0190-C0C4-44CE-8CA1-4E1E704E0029}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
