@@ -5,6 +5,7 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="F:\OneDrive\OneDrive - Georg Becker\FH_STP\Audio\"/>
 				<Property Name="Event Action List\{3DC50BDA-9454-4A55-A60D-F3ADEF065D67}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{534F181E-3B03-4D1C-ACC1-E71EA3ECB794}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9F347D23-792F-433A-9E7A-5CFE7671A8EE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A0641517-A95E-476B-B7D8-5263179B82D1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A0F74A11-5145-46FB-8B2B-F1D3D0617518}\x64_Expand States" Type="string" Value=""/>

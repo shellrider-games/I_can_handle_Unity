@@ -1879,6 +1879,52 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Sound Name="hit_confirm" ID="{BD2042C4-4A75-4AE1-B049-7E0CF5A7AF8C}" ShortID="984537290">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{DA731316-8161-4CA6-BE31-E3A6CE674634}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="600"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+						</Reference>
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise Gain (Custom)" ID="{86EFC9BA-679A-41A9-BF5C-605B7763B332}" ShortID="27129064" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+									<PropertyList>
+										<Property Name="FullBandGain" Type="Real32" Value="3"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="hit_confirm" ID="{1B2739A7-23F9-486F-A4D4-FF2EAD0AADE3}">
+							<Language>SFX</Language>
+							<AudioFile>hit_confirm.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="331851405"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="hit_confirm" ID="{1B2739A7-23F9-486F-A4D4-FF2EAD0AADE3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

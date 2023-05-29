@@ -4,6 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1664509575	ui_button_click			\Default Work Unit\ui_button_click	
 	2744306108	car_start			\Default Work Unit\car_start	
 	3833651337	jump			\Default Work Unit\jump	
+	3950631997	hit_confirm			\Default Work Unit\hit_confirm	
 	4152676669	suburb_ambience			\Default Work Unit\suburb_ambience	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -14,6 +15,7 @@ Switch	ID	Name	Switch Group			Notes
 	4248645337	grass	stepArea			
 
 Effect plug-ins	ID	Name	Type				Notes
+	27129064	Wwise Gain (Custom)	Wwise Gain			
 	565119198	Wwise Gain (Custom)	Wwise Gain			
 	1820854077	Noise_Gate_Fast_Attack	Wwise Expander			
 	3796564934	Hard_Knee_Minus_3dB_RMS	Wwise Compressor			
@@ -24,6 +26,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	211972039	4	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\4		24848
 	244004122	car_start	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\car_start_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\car\car_start		505736
 	290260826	shot	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\shot_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\shot		53568
+	331851405	hit_confirm	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\hit_confirm_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\hit_confirm		10208
 	342539566	6	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\6		24848
 	414578594	groundstep2	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\steps\groundstep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\grassSteps\groundstep2		18912
 	436172419	annieJump	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\annieJump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\annieJump		230504

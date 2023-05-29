@@ -61,9 +61,24 @@
 				<Event Name="car_start" ID="{A0641517-A95E-476B-B7D8-5263179B82D1}">
 					<ChildrenList>
 						<Action Name="" ID="{C01F8508-17DF-44D8-962F-3EF2940EB5C8}" ShortID="437416156">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="car_start" ID="{A787F559-5C8B-4608-9661-99A872B386CC}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="hit_confirm" ID="{534F181E-3B03-4D1C-ACC1-E71EA3ECB794}">
+					<ChildrenList>
+						<Action Name="" ID="{D4266C4F-2807-4280-B2BC-6E486A59ECE5}" ShortID="423472521">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="hit_confirm" ID="{BD2042C4-4A75-4AE1-B049-7E0CF5A7AF8C}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -14,10 +14,9 @@ public class TakeAttackTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("trigger");
         if (other.CompareTag("Attack"))
         {
-            Debug.Log("hit");
+            AkSoundEngine.PostEvent("hit_confirm", gameObject);
             _health.TakeDamage(1);
         }
     }

@@ -11,6 +11,7 @@
 						<ObjectRef Name="car_start" ID="{A0641517-A95E-476B-B7D8-5263179B82D1}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="jump" ID="{E32B0F3D-61C2-484E-BB07-AD7D5E42A129}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="step" ID="{3DC50BDA-9454-4A55-A60D-F3ADEF065D67}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="hit_confirm" ID="{534F181E-3B03-4D1C-ACC1-E71EA3ECB794}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
