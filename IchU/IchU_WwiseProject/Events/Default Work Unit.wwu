@@ -14,17 +14,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="suburb_ambience" ID="{C8F182BA-B56A-449A-98F3-6EDC18B14116}">
-					<ChildrenList>
-						<Action Name="" ID="{17BB0C00-A487-4B03-AE3D-A38234677583}" ShortID="327792001">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="suburbAmbience" ID="{A4BA2C61-BBE5-42AB-B465-1B6EC99BB7F4}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="step" ID="{3DC50BDA-9454-4A55-A60D-F3ADEF065D67}">
 					<ChildrenList>
 						<Action Name="" ID="{48C345AC-C81C-4CD0-ABAA-B69DEB2E3DEC}" ShortID="866008376">
@@ -79,6 +68,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="hit_confirm" ID="{BD2042C4-4A75-4AE1-B049-7E0CF5A7AF8C}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="play_ambience" ID="{0C7D4A6A-2474-4184-A5C0-22EECED50AC6}">
+					<ChildrenList>
+						<Action Name="" ID="{992DBD1C-8A2D-4029-8868-C0776D289434}" ShortID="329639594">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience" ID="{BE784135-C1AE-4C53-A994-10FB251809F5}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="pu_coin" ID="{98C6AB9F-C9C2-444E-81C2-93686027A53F}">
+					<ChildrenList>
+						<Action Name="" ID="{32CEF86A-1685-4FEB-9283-4080E54F7AAD}" ShortID="46143270">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pu_coin" ID="{CF72264D-BA6B-4F66-82F2-1479376F951B}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

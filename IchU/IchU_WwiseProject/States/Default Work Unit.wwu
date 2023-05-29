@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A9100B3C-6F37-430B-ADEB-6732BD19012B}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{A9100B3C-6F37-430B-ADEB-6732BD19012B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A9100B3C-6F37-430B-ADEB-6732BD19012B}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Scene" ID="{B6A894DA-35B3-4913-AB6E-EA057DE04129}">
+					<ChildrenList>
+						<State Name="None" ID="{490B1B25-C14D-49A6-9362-0D4D21DCABD2}"/>
+						<State Name="indoor" ID="{6DC42D98-0EA8-4EB1-A4BB-D66BB3662E41}"/>
+						<State Name="outdoor" ID="{666F9AC8-A8B1-4996-894C-AB8359B57DB1}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

@@ -19,7 +19,6 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Debug.Log("hit");
         hp -= damage;
         if(hp <= 0) Destroy(gameObject);
         else

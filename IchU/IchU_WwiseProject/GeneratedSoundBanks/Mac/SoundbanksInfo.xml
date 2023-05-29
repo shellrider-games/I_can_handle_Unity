@@ -16,12 +16,22 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="167531172">
+		<SoundBank Id="1355168291" Language="SFX" Hash="943818474">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="3319985400" Name="betweenHousesReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\betweenHousesReverb"/>
+				<AuxBus Id="3641305797" Name="coffeeshopReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\coffeeshopReverb"/>
+			</IncludedAuxBusses>
+			<ExcludedMemoryFiles>
+				<File Id="1051291759" Language="SFX">
+					<ShortName>AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01_E418B96C.wem</Path>
+				</File>
+			</ExcludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="31932074">
+		<SoundBank Id="3161908922" Language="SFX" Hash="385330221">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -47,6 +57,28 @@
 						<File Id="436172419" Language="SFX">
 							<ShortName>annieJump.wav</ShortName>
 							<Path>SFX\annieJump_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="278617630" Name="play_ambience" ObjectPath="\Events\Default Work Unit\play_ambience" DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="843975111" Language="SFX">
+							<ShortName>suburbBackground.wav</ShortName>
+							<Path>SFX\suburbBackground_10C4C929.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
+					<IncludedMemoryFiles>
+						<File Id="809965621" Language="SFX">
+							<ShortName>coffeeshop_ambience.wav</ShortName>
+							<Path>SFX\coffeeshop_ambience_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1806371972" Name="pu_coin" ObjectPath="\Events\Default Work Unit\pu_coin" DurationType="OneShot" DurationMin="0.508005" DurationMax="0.508005">
+					<IncludedMemoryFiles>
+						<File Id="915643029" Language="SFX">
+							<ShortName>pu_coin.wav</ShortName>
+							<Path>SFX\pu_coin_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -143,14 +175,6 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="4152676669" Name="suburb_ambience" ObjectPath="\Events\Default Work Unit\suburb_ambience" DurationType="Infinite">
-					<ReferencedStreamedFiles>
-						<File Id="843975111" Language="SFX">
-							<ShortName>suburbBackground.wav</ShortName>
-							<Path>SFX\suburbBackground_10C4C929.wem</Path>
-						</File>
-					</ReferencedStreamedFiles>
-				</Event>
 				<Event Id="1664509575" Name="ui_button_click" ObjectPath="\Events\Default Work Unit\ui_button_click" DurationType="OneShot" DurationMin="0.756258" DurationMax="0.756258">
 					<IncludedMemoryFiles>
 						<File Id="750838162" Language="SFX">
@@ -160,6 +184,19 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<IncludedAuxBusses>
+				<AuxBus Id="3319985400" Name="betweenHousesReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\betweenHousesReverb"/>
+				<AuxBus Id="3641305797" Name="coffeeshopReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\coffeeshopReverb"/>
+			</IncludedAuxBusses>
+			<IncludedMemoryFiles>
+				<File Id="1051291759" Language="SFX">
+					<ShortName>AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01.wav</ShortName>
+					<Path>Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01_E418B96C.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+			<GameParameters>
+				<GameParameter Id="985024900" Name="coin_pickup_shift" ObjectPath="\Game Parameters\Default Work Unit\coin_pickup_shift"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="2172358596" Name="stepArea" ObjectPath="\Switches\Default Work Unit\stepArea" GUID="{EDFB800E-DE03-4EE0-96F3-25F22000B623}">
 					<Switches>

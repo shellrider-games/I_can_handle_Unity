@@ -16,11 +16,28 @@ namespace AK
         static const AkUniqueID CAR_START = 2744306108U;
         static const AkUniqueID HIT_CONFIRM = 3950631997U;
         static const AkUniqueID JUMP = 3833651337U;
+        static const AkUniqueID PLAY_AMBIENCE = 278617630U;
+        static const AkUniqueID PU_COIN = 1806371972U;
         static const AkUniqueID SHOT = 251412229U;
         static const AkUniqueID STEP = 621108255U;
-        static const AkUniqueID SUBURB_AMBIENCE = 4152676669U;
         static const AkUniqueID UI_BUTTON_CLICK = 1664509575U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace SCENE
+        {
+            static const AkUniqueID GROUP = 1926883983U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INDOOR = 340398852U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OUTDOOR = 144697359U;
+            } // namespace STATE
+        } // namespace SCENE
+
+    } // namespace STATES
 
     namespace SWITCHES
     {
@@ -37,6 +54,11 @@ namespace AK
 
     } // namespace SWITCHES
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID COIN_PICKUP_SHIFT = 985024900U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
@@ -47,6 +69,12 @@ namespace AK
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID BETWEENHOUSESREVERB = 3319985400U;
+        static const AkUniqueID COFFEESHOPREVERB = 3641305797U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

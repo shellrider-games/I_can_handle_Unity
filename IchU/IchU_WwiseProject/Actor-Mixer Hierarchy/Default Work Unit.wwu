@@ -1205,16 +1205,18 @@
 				</Folder>
 				<Folder Name="background" ID="{20275395-0B41-4432-B95D-39D0BB2A1874}" ShortID="541188483">
 					<ChildrenList>
-						<RandomSequenceContainer Name="suburbAmbience" ID="{A4BA2C61-BBE5-42AB-B465-1B6EC99BB7F4}" ShortID="286871454">
+						<BlendContainer Name="Ambience" ID="{BE784135-C1AE-4C53-A994-10FB251809F5}" ShortID="52499043">
 							<PropertyList>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
-								<Property Name="Volume" Type="Real64">
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1227,11 +1229,15 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="suburbBackground" ID="{1294FFBE-575F-4739-9CC1-137E392DD6B3}" ShortID="131765882">
+								<RandomSequenceContainer Name="coffeeshopAmbience" ID="{884E64AD-05B9-4425-AB12-6A2437C69FC5}" ShortID="1046299508">
 									<PropertyList>
-										<Property Name="IsStreamingEnabled" Type="bool">
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>True</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1244,27 +1250,147 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="suburbBackground" ID="{8D023B7B-1B88-4E7D-A382-14657C53B410}">
-											<Language>SFX</Language>
-											<AudioFile>suburbBackground.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="843975111"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="coffeeshop_ambience" ID="{082244EF-8BF8-4485-BA28-280B69703EB9}" ShortID="818990880">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="coffeeshop_ambience" ID="{1A8EFDA9-FFD5-45FE-8070-9343CA2673F9}">
+													<Language>SFX</Language>
+													<AudioFile>coffeeshop_ambience.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="809965621"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="coffeeshop_ambience" ID="{1A8EFDA9-FFD5-45FE-8070-9343CA2673F9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Scene" ID="{B6A894DA-35B3-4913-AB6E-EA057DE04129}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="outdoor" ID="{666F9AC8-A8B1-4996-894C-AB8359B57DB1}"/>
+												<CustomState Name="" ID="{1BA198DD-1450-441A-B5D6-2BA28FCB361D}" ShortID="915956521">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="indoor" ID="{6DC42D98-0EA8-4EB1-A4BB-D66BB3662E41}"/>
+												<CustomState Name="" ID="{8DBDCA05-5E1C-47A6-95E0-661D28B1F554}" ShortID="205485046"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ObjectLists/>
-									<ActiveSourceList>
-										<ActiveSource Name="suburbBackground" ID="{8D023B7B-1B88-4E7D-A382-14657C53B410}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="suburbAmbience" ID="{A4BA2C61-BBE5-42AB-B465-1B6EC99BB7F4}" ShortID="286871454">
+									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="suburbBackground" ID="{1294FFBE-575F-4739-9CC1-137E392DD6B3}" ShortID="131765882">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="suburbBackground" ID="{8D023B7B-1B88-4E7D-A382-14657C53B410}">
+													<Language>SFX</Language>
+													<AudioFile>suburbBackground.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="843975111"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists/>
+											<ActiveSourceList>
+												<ActiveSource Name="suburbBackground" ID="{8D023B7B-1B88-4E7D-A382-14657C53B410}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Scene" ID="{B6A894DA-35B3-4913-AB6E-EA057DE04129}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="outdoor" ID="{666F9AC8-A8B1-4996-894C-AB8359B57DB1}"/>
+												<CustomState Name="" ID="{40473E32-6571-4577-B025-E590A570329F}" ShortID="429639543"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="indoor" ID="{6DC42D98-0EA8-4EB1-A4BB-D66BB3662E41}"/>
+												<CustomState Name="" ID="{9EA67994-EAB3-4234-A558-D4546FE3CCDB}" ShortID="596610702">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists/>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<ObjectLists/>
-						</RandomSequenceContainer>
+						</BlendContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="steps" ID="{C61ACC20-A636-44DF-8771-66CCDC3ECAA0}" ShortID="922524602">
 					<ChildrenList>
 						<SwitchContainer Name="stepSwitch" ID="{71F31B01-BB4A-4726-852A-EA1D6FAAC110}" ShortID="963448476">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
@@ -1923,6 +2049,79 @@
 					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="hit_confirm" ID="{1B2739A7-23F9-486F-A4D4-FF2EAD0AADE3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="pu_coin" ID="{CF72264D-BA6B-4F66-82F2-1479376F951B}" ShortID="425890899">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<RTPCList>
+								<RTPC Name="" ID="{F86A1594-2977-4644-9378-D0054F247325}" ShortID="375414097">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="coin_pickup_shift" ID="{85330950-2026-4B23-86DC-4211B4E28884}" WorkUnitID="{7E57B4B6-9C41-47FD-B020-C29761A4A4A3}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{706AA175-F4B3-4C00-BD85-C3C70B96EAD5}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-100</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>6.47059</XPos>
+												<YPos>128</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>11.76471</XPos>
+												<YPos>370</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>16.5098</XPos>
+												<YPos>568</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>19.9607843137255</XPos>
+												<YPos>599</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>20</XPos>
+												<YPos>600</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="pu_coin" ID="{79A55EAF-6F57-41B4-896B-C1F17E1F67E2}">
+							<Language>SFX</Language>
+							<AudioFile>pu_coin.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="915643029"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="pu_coin" ID="{79A55EAF-6F57-41B4-896B-C1F17E1F67E2}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

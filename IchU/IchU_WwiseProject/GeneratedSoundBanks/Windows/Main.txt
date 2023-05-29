@@ -1,11 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	251412229	shot			\Default Work Unit\shot	
+	278617630	play_ambience			\Default Work Unit\play_ambience	
 	621108255	step			\Default Work Unit\step	
 	1664509575	ui_button_click			\Default Work Unit\ui_button_click	
+	1806371972	pu_coin			\Default Work Unit\pu_coin	
 	2744306108	car_start			\Default Work Unit\car_start	
 	3833651337	jump			\Default Work Unit\jump	
 	3950631997	hit_confirm			\Default Work Unit\hit_confirm	
-	4152676669	suburb_ambience			\Default Work Unit\suburb_ambience	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	2172358596	stepArea			\Default Work Unit\stepArea	
@@ -14,10 +15,34 @@ Switch	ID	Name	Switch Group			Notes
 	841620460	concrete	stepArea			
 	4248645337	grass	stepArea			
 
+State Group	ID	Name			Wwise Object Path	Notes
+	1926883983	Scene			\Default Work Unit\Scene	
+
+State	ID	Name	State Group			Notes
+	144697359	outdoor	Scene			
+	340398852	indoor	Scene			
+	748895195	None	Scene			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	596610702	indoor	Scene	\Actor-Mixer Hierarchy\Default Work Unit\background\Ambience\suburbAmbience		
+	915956521	outdoor	Scene	\Actor-Mixer Hierarchy\Default Work Unit\background\Ambience\coffeeshopAmbience		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	985024900	coin_pickup_shift			\Default Work Unit\coin_pickup_shift	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	3319985400	betweenHousesReverb			\Default Work Unit\Master Audio Bus\betweenHousesReverb	
+	3641305797	coffeeshopReverb			\Default Work Unit\Master Audio Bus\coffeeshopReverb	
+
 Effect plug-ins	ID	Name	Type				Notes
 	27129064	Wwise Gain (Custom)	Wwise Gain			
 	565119198	Wwise Gain (Custom)	Wwise Gain			
 	1820854077	Noise_Gate_Fast_Attack	Wwise Expander			
+	2022941723	HamburgStadtpark_Dense_Reflections_Stereo	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms 
+	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
 	3796564934	Hard_Knee_Minus_3dB_RMS	Wwise Compressor			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -36,11 +61,16 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	694653774	7	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\boots\7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\7		24848
 	710223311	5	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\boots\5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\5		24848
 	750838162	Minimalist2	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\WAV\Minimalist2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ui\Minimalist2		133548
+	809965621	coffeeshop_ambience	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\coffeeshop_ambience_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\background\Ambience\coffeeshopAmbience\coffeeshop_ambience		5339876
 	819981975	2	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\boots\2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\2		25408
 	852040016	8	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\boots\8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\8		24848
 	872779969	groundstep5	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\steps\groundstep5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\grassSteps\groundstep5		20552
+	915643029	pu_coin	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\pu_coin_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pu_coin		44870
 	1063678928	groundstep4	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\steps\groundstep4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\grassSteps\groundstep4		21178
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	843975111	suburbBackground	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\suburbBackground_10C4C929.wem	843975111.wem	\Actor-Mixer Hierarchy\Default Work Unit\background\suburbAmbience\suburbBackground	
+	843975111	suburbBackground	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\suburbBackground_10C4C929.wem	843975111.wem	\Actor-Mixer Hierarchy\Default Work Unit\background\Ambience\suburbAmbience\suburbBackground	
+
+Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
+	1051291759	HamburgStadtpark_Dense_Reflections_Stereo	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01_E418B96C.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects Stereo\Exteriors\HamburgStadtpark_Dense_Reflections_Stereo	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms 	150656
 

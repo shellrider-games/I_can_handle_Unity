@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class SuburbStartAudio : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
-        AkSoundEngine.PostEvent("suburb_ambience", gameObject);
+        AkSoundEngine.PostEvent("play_ambience", gameObject);
     }
     
 }
