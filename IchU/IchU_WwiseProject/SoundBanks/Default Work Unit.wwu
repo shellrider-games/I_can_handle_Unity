@@ -5,8 +5,10 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{1541518A-A6DA-4F41-8864-390AFD7CC184}">
 					<ObjectInclusionList>
+						<ObjectRef Name="shot" ID="{9F347D23-792F-433A-9E7A-5CFE7671A8EE}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="suburb_ambience" ID="{C8F182BA-B56A-449A-98F3-6EDC18B14116}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ui_button_click" ID="{A0F74A11-5145-46FB-8B2B-F1D3D0617518}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="car_start" ID="{A0641517-A95E-476B-B7D8-5263179B82D1}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="jump" ID="{E32B0F3D-61C2-484E-BB07-AD7D5E42A129}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="step" ID="{3DC50BDA-9454-4A55-A60D-F3ADEF065D67}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

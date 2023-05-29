@@ -7,6 +7,6 @@ public class DestroyOnHit : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        if(gameObject.CompareTag("Enemy") || gameObject.CompareTag("Ground")) Destroy(gameObject);
     }
 }

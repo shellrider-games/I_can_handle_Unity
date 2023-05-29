@@ -16,5 +16,6 @@ public class SpawnOnFire : MonoBehaviour
         GameObject noob = Instantiate(spawnObject, transform.position, Quaternion.identity);
         noob.transform.LookAt(transform.position + transform.forward, Vector3.up);
         noob.transform.Translate(spawnOffset* Vector3.forward);
+        AkSoundEngine.PostEvent("shot", gameObject);
     }
 }

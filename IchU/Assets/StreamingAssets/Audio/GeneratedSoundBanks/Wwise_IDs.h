@@ -13,7 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID CAR_START = 2744306108U;
         static const AkUniqueID JUMP = 3833651337U;
+        static const AkUniqueID SHOT = 251412229U;
         static const AkUniqueID STEP = 621108255U;
         static const AkUniqueID SUBURB_AMBIENCE = 4152676669U;
         static const AkUniqueID UI_BUTTON_CLICK = 1664509575U;

@@ -47,6 +47,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="shot" ID="{9F347D23-792F-433A-9E7A-5CFE7671A8EE}">
+					<ChildrenList>
+						<Action Name="" ID="{06C877D3-1BE9-4182-BAC9-06FBC5BBCC3F}" ShortID="163287581">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shot" ID="{AAF69F3C-00E8-4F5F-9EE8-648F32C31586}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="car_start" ID="{A0641517-A95E-476B-B7D8-5263179B82D1}">
+					<ChildrenList>
+						<Action Name="" ID="{C01F8508-17DF-44D8-962F-3EF2940EB5C8}" ShortID="437416156">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="car_start" ID="{A787F559-5C8B-4608-9661-99A872B386CC}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
