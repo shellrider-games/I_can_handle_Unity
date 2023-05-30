@@ -1828,6 +1828,7 @@
 								<Value>50</Value>
 							</ValueList>
 						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -1872,6 +1873,7 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>4</Value>
@@ -1925,23 +1927,18 @@
 				</Sound>
 				<Folder Name="car" ID="{55BBA287-14C8-4EE9-9003-5E501E84FAA0}" ShortID="473330671">
 					<ChildrenList>
-						<Sound Name="car_start" ID="{A787F559-5C8B-4608-9661-99A872B386CC}" ShortID="165055899">
+						<Sound Name="startup" ID="{47A13C04-7B9A-4978-B386-C2FBE38EB33E}" ShortID="1035860488">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="Pitch" Type="int32">
-									<ValueList>
-										<Value>-30</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
 									<Custom>
-										<Attenuation Name="Attenuation (Custom)" ID="{28224828-0952-492C-8F0E-0DB586A9DD10}" ShortID="8197249">
+										<Attenuation Name="Attenuation (Custom)" ID="{036CC7C9-AE59-4CB1-9B27-418A717173E4}" ShortID="868678698">
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
 													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{92D4F04A-3385-4E11-BF21-B8B524467A7C}">
+														<Curve Name="VolumeDry" ID="{DCA1413F-FA7F-499C-BE1B-ECAD3FEEE955}">
 															<PropertyList>
 																<Property Name="Flags" Type="int32" Value="3"/>
 															</PropertyList>
@@ -1988,19 +1985,319 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
 								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Auro" ID="{130A02DC-8E9C-481E-9BFE-D41CDC7CD38C}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="car_start" ID="{AD23CDB9-6E20-44F9-91F6-C8CD9E9CF081}">
+								<AudioFileSource Name="startup" ID="{576C0D86-D90D-48DA-9A6C-46147FB1BF11}">
 									<Language>SFX</Language>
-									<AudioFile>car_start.wav</AudioFile>
+									<AudioFile>startup.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="244004122"/>
+										<MediaID ID="910312138"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ObjectLists/>
 							<ActiveSourceList>
-								<ActiveSource Name="car_start" ID="{AD23CDB9-6E20-44F9-91F6-C8CD9E9CF081}" Platform="Linked"/>
+								<ActiveSource Name="startup" ID="{576C0D86-D90D-48DA-9A6C-46147FB1BF11}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<BlendContainer Name="carEngine" ID="{0DCFC0AC-81F2-4729-BFD5-4A52D478C71B}" ShortID="78914245">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{F168C8B4-B2CB-4EDD-B61B-66F1A4AB1651}" ShortID="867610182">
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{AAEFD18D-1B15-4B13-80FF-562DEDB957C9}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Auro" ID="{130A02DC-8E9C-481E-9BFE-D41CDC7CD38C}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="low_off" ID="{73E59B8A-58B3-4FF8-9E2C-B7CC284229E5}" ShortID="252551717">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="low_off" ID="{620B0673-FBB8-45A8-9B4A-781B51F9FCDF}">
+											<Language>SFX</Language>
+											<AudioFile>low_off.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="709641309"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="low_off" ID="{620B0673-FBB8-45A8-9B4A-781B51F9FCDF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="med_off" ID="{C941ABCD-A68A-4162-8D09-7FF8B51EEC00}" ShortID="66176271">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="med_off" ID="{D609F869-22B0-44BF-B3D8-E042D0256578}">
+											<Language>SFX</Language>
+											<AudioFile>med_off.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="573977492"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="med_off" ID="{D609F869-22B0-44BF-B3D8-E042D0256578}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="high_off" ID="{A8D1604C-7791-4062-9D65-B87D8A10E6E7}" ShortID="869574524">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="high_off" ID="{F7A1C8F8-4AFD-4421-8C87-EBB98FFD2C09}">
+											<Language>SFX</Language>
+											<AudioFile>high_off.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="655151383"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="high_off" ID="{F7A1C8F8-4AFD-4421-8C87-EBB98FFD2C09}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="idle" ID="{F4537EED-0929-4754-BF31-5BE59574F04D}" ShortID="805272190">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="idle" ID="{ED13227E-5189-4619-B536-37EA7129A2DC}">
+											<Language>SFX</Language>
+											<AudioFile>idle.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="463449267"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="idle" ID="{ED13227E-5189-4619-B536-37EA7129A2DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+							<BlendTrackList>
+								<BlendTrack Name="engine" ID="{B2C6BE30-89B8-4239-A4F0-169EADD8DEB2}" ShortID="333762267">
+									<PropertyList>
+										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="LayerCrossFadeControlInput">
+											<ObjectRef Name="car_speed" ID="{0AE40A86-77C2-43CF-92AD-175AA82D8B28}" WorkUnitID="{7E57B4B6-9C41-47FD-B020-C29761A4A4A3}"/>
+										</Reference>
+									</ReferenceList>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="idle" ID="{F4537EED-0929-4754-BF31-5BE59574F04D}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>0</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>1.73519769147021</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="low_off" ID="{73E59B8A-58B3-4FF8-9E2C-B7CC284229E5}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>0.644086443270301</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>7.60972899237647</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="med_off" ID="{C941ABCD-A68A-4162-8D09-7FF8B51EEC00}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>1.73519769147021</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>14.9995</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="high_off" ID="{A8D1604C-7791-4062-9D65-B87D8A10E6E7}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>7.60972899237647</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>15</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+							</BlendTrackList>
+						</BlendContainer>
+						<Sound Name="car_break" ID="{D49A0128-1DD3-4A87-A284-936C5BD8F9B0}" ShortID="454005590">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<Custom>
+										<Attenuation Name="Attenuation (Custom)" ID="{5636A7C1-DE9C-4636-A270-35293C9CD0E8}" ShortID="163809023">
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{2064A9E7-803E-4AE5-9EE3-B1C2A74670DC}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>100</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Auro" ID="{130A02DC-8E9C-481E-9BFE-D41CDC7CD38C}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="car-break-sound-effect" ID="{9C8EA321-DAF0-4B11-A653-D6913342EA9E}">
+									<Language>SFX</Language>
+									<AudioFile>car-break-sound-effect.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="790066983"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="car-break-sound-effect" ID="{9C8EA321-DAF0-4B11-A653-D6913342EA9E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -2124,6 +2421,88 @@
 						<ActiveSource Name="pu_coin" ID="{79A55EAF-6F57-41B4-896B-C1F17E1F67E2}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="annieHurt" ID="{20266D22-2E98-4AA0-AA36-461911FD3487}" ShortID="153995634">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>30</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{3E10E5FF-F793-42EF-AF56-3A6E55B75359}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="annie_hurt_done2" ID="{D34A7713-2B12-4786-A2BD-FA217BF1DEBD}" ShortID="944009055">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="annie_hurt_done2" ID="{E167F677-F0F9-4895-85B8-10BE599026F2}">
+									<Language>SFX</Language>
+									<AudioFile>annie_hurt_done2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="409112070"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="annie_hurt_done2" ID="{E167F677-F0F9-4895-85B8-10BE599026F2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="annie_hurt_done" ID="{F5B71C12-F8FA-41D0-B3D9-9EE4F50AE3A6}" ShortID="187109794">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="annie_hurt_done" ID="{D2C6E95F-03A0-42FF-9CF3-6CDD2596FE4C}">
+									<Language>SFX</Language>
+									<AudioFile>annie_hurt_done.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="787034820"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="annie_hurt_done" ID="{D2C6E95F-03A0-42FF-9CF3-6CDD2596FE4C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists/>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

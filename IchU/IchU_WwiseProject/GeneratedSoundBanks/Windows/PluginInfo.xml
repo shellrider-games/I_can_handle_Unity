@@ -8,5 +8,6 @@
 		<Plugin Name="Wwise Gain" ID="9109507" DLL="AkGain" StaticLib="AkGainFX"/>
 		<Plugin Name="System" ID="11403271"/>
 		<Plugin Name="No Output" ID="11862023"/>
+		<Plugin Name="Auro Headphone" ID="72093811" DLL="Auro" StaticLib="AuroHeadphoneFX"/>
 	</Plugins>
 </PluginInfo>

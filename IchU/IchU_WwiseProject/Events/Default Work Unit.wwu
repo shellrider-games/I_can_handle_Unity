@@ -56,7 +56,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="car_start" ID="{A787F559-5C8B-4608-9661-99A872B386CC}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+									<ObjectRef Name="startup" ID="{47A13C04-7B9A-4978-B386-C2FBE38EB33E}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -90,6 +90,49 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="pu_coin" ID="{CF72264D-BA6B-4F66-82F2-1479376F951B}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="hurt" ID="{4F416407-2EF2-46AB-9F65-597484D97019}">
+					<ChildrenList>
+						<Action Name="" ID="{84736BBE-D38F-419E-A4BD-081677209EBD}" ShortID="207050239">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="annieHurt" ID="{20266D22-2E98-4AA0-AA36-461911FD3487}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="engine_on" ID="{A944F986-D33B-4A68-B68E-83288C02C339}">
+					<ChildrenList>
+						<Action Name="" ID="{B48F1F91-127B-4BFA-BBD1-CD94F5D1F238}" ShortID="693758669">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="carEngine" ID="{0DCFC0AC-81F2-4729-BFD5-4A52D478C71B}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="engine_off" ID="{2FF06AE6-76BB-42F2-A509-230773D6F2D2}">
+					<ChildrenList>
+						<Action Name="" ID="{076FC36B-49AE-44EA-A403-DB62FC8C3DC9}" ShortID="857999976">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="carEngine" ID="{0DCFC0AC-81F2-4729-BFD5-4A52D478C71B}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{186CBD8A-F63D-4AEA-9F9F-2D1081F7506E}" ShortID="346931633">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="car_break" ID="{D49A0128-1DD3-4A87-A284-936C5BD8F9B0}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

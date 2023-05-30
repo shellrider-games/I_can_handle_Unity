@@ -38,8 +38,25 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 58a464ae6bcd974a88bdee99908046e3
     GuidInternal: 
-    m_lastTime: -8585162328867858969
+    m_lastTime: -8585161389505320003
     List:
+    - name: Auro
+      guid: dc020a139c8e1e489bfed41cdc7cd38c
+      id: 3536273778
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 58a464ae6bcd974a88bdee99908046e3
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Auro
+        ObjectType: 1
+        guid: dc020a139c8e1e489bfed41cdc7cd38c
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Auro
     - name: betweenHousesReverb
       guid: f79d1be1dad85b468cf70cdd56826cd9
       id: 3319985400
@@ -100,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 79a7ecb108d6464290acfbd113ff6f2d
     GuidInternal: 
-    m_lastTime: -8585162331537488302
+    m_lastTime: -8585161405296344906
     List:
     - name: Main
       guid: 8a514115daa6414f8864390afd7cc184
@@ -128,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 660b3d2a60941f4a8719a049ddc71f20
     GuidInternal: 
-    m_lastTime: -8585162433002293780
+    m_lastTime: -8585161394255752112
     List:
     - name: car_start
       guid: 171564a05ea96b47b7d85263179b82d1
@@ -145,8 +162,42 @@ MonoBehaviour:
         guid: 171564a05ea96b47b7d85263179b82d1
       Path: Events\Default Work Unit\car_start
       maxAttenuation: 100
-      maxDuration: 2.916729
-      minDuration: 2.916729
+      maxDuration: 1.261769
+      minDuration: 1.261769
+    - name: engine_off
+      guid: e66af02fbb76f242a509230773d6f2d2
+      id: 998053453
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 660b3d2a60941f4a8719a049ddc71f20
+      - ElementName: engine_off
+        ObjectType: 3
+        guid: e66af02fbb76f242a509230773d6f2d2
+      Path: Events\Default Work Unit\engine_off
+      maxAttenuation: 100
+      maxDuration: 2.530975
+      minDuration: 2.530975
+    - name: engine_on
+      guid: 86f944a93bd3684ab68e83288c02c339
+      id: 2815678465
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 660b3d2a60941f4a8719a049ddc71f20
+      - ElementName: engine_on
+        ObjectType: 3
+        guid: 86f944a93bd3684ab68e83288c02c339
+      Path: Events\Default Work Unit\engine_on
+      maxAttenuation: 100
+      maxDuration: -1
+      minDuration: -1
     - name: hit_confirm
       guid: 1e184f53033b1c4dacc1e71ea3ecb794
       id: 3950631997
@@ -164,6 +215,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.115011
       minDuration: 0.081325
+    - name: hurt
+      guid: 0764414ff22eab469f65597484d97019
+      id: 3193947170
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 660b3d2a60941f4a8719a049ddc71f20
+      - ElementName: hurt
+        ObjectType: 3
+        guid: 0764414ff22eab469f65597484d97019
+      Path: Events\Default Work Unit\hurt
+      maxAttenuation: 0
+      maxDuration: 0.891633
+      minDuration: 0.546715
     - name: jump
       guid: 3d0f2be3c2614e48bb07ad7d5e42a129
       id: 3833651337
@@ -278,8 +346,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b6b4577e419cfd47b020c29761a4a4a3
     GuidInternal: 
-    m_lastTime: -8585162432464245455
+    m_lastTime: -8585161399968243317
     List:
+    - name: car_speed
+      guid: 860ae40ac277cf4392ad175aa82d8b28
+      id: 4164958897
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b6b4577e419cfd47b020c29761a4a4a3
+      - ElementName: car_speed
+        ObjectType: 13
+        guid: 860ae40ac277cf4392ad175aa82d8b28
+      Path: Game Parameters\Default Work Unit\car_speed
     - name: coin_pickup_shift
       guid: 500933852620234b86dc4211b4e28884
       id: 985024900
@@ -306,7 +388,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 3c0b10a9376f0b43adeb6732bd19012b
     GuidInternal: 
-    m_lastTime: -8585162461778988955
+    m_lastTime: -8585161396145923099
     List:
     - name: Scene
       guid: da94a8b6b3351349ab6eea057de04129
@@ -339,22 +421,6 @@ MonoBehaviour:
         - ElementName: indoor
           ObjectType: 8
           guid: 982dc46da80eb14ea4bbd66bb3662e41
-      - name: None
-        guid: 251b0b494dc1a64993620d4d21dcabd2
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 3c0b10a9376f0b43adeb6732bd19012b
-        - ElementName: Scene
-          ObjectType: 9
-          guid: da94a8b6b3351349ab6eea057de04129
-        - ElementName: None
-          ObjectType: 8
-          guid: 251b0b494dc1a64993620d4d21dcabd2
       - name: outdoor
         guid: c89a6f66b1a89649894cab8359b57db1
         id: 144697359
@@ -453,7 +519,7 @@ MonoBehaviour:
     m_lastTime: -8585163115894905148
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000200000003000000040000000a0000000b0000000c0000001000000011000000130000001a0000008d0000008e0000008f000000
+  ExpandedWaapiItemIds: 0100000002000000030000000400000005000000060000000a0000000b0000000c0000001000000011000000130000001a0000008d0000008e0000008f000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -14,7 +14,10 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID CAR_START = 2744306108U;
+        static const AkUniqueID ENGINE_OFF = 998053453U;
+        static const AkUniqueID ENGINE_ON = 2815678465U;
         static const AkUniqueID HIT_CONFIRM = 3950631997U;
+        static const AkUniqueID HURT = 3193947170U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID PLAY_AMBIENCE = 278617630U;
         static const AkUniqueID PU_COIN = 1806371972U;
@@ -32,7 +35,6 @@ namespace AK
             namespace STATE
             {
                 static const AkUniqueID INDOOR = 340398852U;
-                static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID OUTDOOR = 144697359U;
             } // namespace STATE
         } // namespace SCENE
@@ -56,6 +58,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID CAR_SPEED = 4164958897U;
         static const AkUniqueID COIN_PICKUP_SHIFT = 985024900U;
     } // namespace GAME_PARAMETERS
 
@@ -72,6 +75,7 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID AURO = 3536273778U;
         static const AkUniqueID BETWEENHOUSESREVERB = 3319985400U;
         static const AkUniqueID COFFEESHOPREVERB = 3641305797U;
     } // namespace AUX_BUSSES

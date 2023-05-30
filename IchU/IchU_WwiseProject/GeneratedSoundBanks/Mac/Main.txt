@@ -2,9 +2,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	251412229	shot			\Default Work Unit\shot	
 	278617630	play_ambience			\Default Work Unit\play_ambience	
 	621108255	step			\Default Work Unit\step	
+	998053453	engine_off			\Default Work Unit\engine_off	
 	1664509575	ui_button_click			\Default Work Unit\ui_button_click	
 	1806371972	pu_coin			\Default Work Unit\pu_coin	
 	2744306108	car_start			\Default Work Unit\car_start	
+	2815678465	engine_on			\Default Work Unit\engine_on	
+	3193947170	hurt			\Default Work Unit\hurt	
 	3833651337	jump			\Default Work Unit\jump	
 	3950631997	hit_confirm			\Default Work Unit\hit_confirm	
 
@@ -21,7 +24,6 @@ State Group	ID	Name			Wwise Object Path	Notes
 State	ID	Name	State Group			Notes
 	144697359	outdoor	Scene			
 	340398852	indoor	Scene			
-	748895195	None	Scene			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	596610702	indoor	Scene	\Actor-Mixer Hierarchy\Default Work Unit\background\Ambience\suburbAmbience		
@@ -29,16 +31,19 @@ Custom State	ID	Name	State Group	Owner		Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	985024900	coin_pickup_shift			\Default Work Unit\coin_pickup_shift	
+	4164958897	car_speed			\Default Work Unit\car_speed	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3319985400	betweenHousesReverb			\Default Work Unit\Master Audio Bus\betweenHousesReverb	
+	3536273778	Auro			\Default Work Unit\Master Audio Bus\Auro	
 	3641305797	coffeeshopReverb			\Default Work Unit\Master Audio Bus\coffeeshopReverb	
 
 Effect plug-ins	ID	Name	Type				Notes
 	27129064	Wwise Gain (Custom)	Wwise Gain			
+	129746433	Auro Headphone (Custom)	Auro Headphone			
 	565119198	Wwise Gain (Custom)	Wwise Gain			
 	1820854077	Noise_Gate_Fast_Attack	Wwise Expander			
 	2022941723	HamburgStadtpark_Dense_Reflections_Stereo	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms 
@@ -46,30 +51,37 @@ Effect plug-ins	ID	Name	Type				Notes
 	3796564934	Hard_Knee_Minus_3dB_RMS	Wwise Compressor			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	48274193	0	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\0_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\0		28176
-	192013112	groundstep3	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\steps\groundstep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\grassSteps\groundstep3		23206
-	211972039	4	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\4		24848
-	244004122	car_start	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\car_start_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\car\car_start		505736
-	290260826	shot	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\shot_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\shot		53568
-	331851405	hit_confirm	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\hit_confirm_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\hit_confirm		10208
-	342539566	6	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\6		24848
-	414578594	groundstep2	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\steps\groundstep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\grassSteps\groundstep2		18912
-	436172419	annieJump	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\annieJump_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\annieJump		230504
-	523786268	groundstep1	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\steps\groundstep1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\grassSteps\groundstep1		28692
-	578610758	3	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\3		26432
-	635765426	1	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\1		24848
-	694653774	7	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\7		24848
-	710223311	5	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\5		24848
-	750838162	Minimalist2	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\WAV\Minimalist2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ui\Minimalist2		133548
-	809965621	coffeeshop_ambience	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\coffeeshop_ambience_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\background\Ambience\coffeeshopAmbience\coffeeshop_ambience		5339876
-	819981975	2	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\2		25408
-	852040016	8	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\8		24848
-	872779969	groundstep5	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\steps\groundstep5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\grassSteps\groundstep5		20552
-	915643029	pu_coin	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\pu_coin_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\pu_coin		44870
-	1063678928	groundstep4	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\steps\groundstep4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\grassSteps\groundstep4		21178
+	48274193	0	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\0_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\0		1832
+	192013112	groundstep3	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\steps\groundstep3_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\grassSteps\groundstep3		3112
+	211972039	4	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\4_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\4		1748
+	290260826	shot	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\shot_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\shot		4637
+	331851405	hit_confirm	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\hit_confirm_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\hit_confirm		1187
+	342539566	6	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\6_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\6		1826
+	409112070	annie_hurt_done2	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\annie_hurt_done2_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\annieHurt\annie_hurt_done2		6125
+	414578594	groundstep2	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\steps\groundstep2_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\grassSteps\groundstep2		2445
+	436172419	annieJump	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\annieJump_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\annieJump		4296
+	463449267	idle	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\idle_3D1D1BA5.wem		\Actor-Mixer Hierarchy\Default Work Unit\car\carEngine\idle		42430
+	523786268	groundstep1	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\steps\groundstep1_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\grassSteps\groundstep1		3845
+	573977492	med_off	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\med_off_3D1D1BA5.wem		\Actor-Mixer Hierarchy\Default Work Unit\car\carEngine\med_off		19317
+	578610758	3	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\3_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\3		1959
+	635765426	1	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\1_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\1		1795
+	655151383	high_off	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\high_off_3D1D1BA5.wem		\Actor-Mixer Hierarchy\Default Work Unit\car\carEngine\high_off		13403
+	694653774	7	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\7_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\7		1769
+	709641309	low_off	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\low_off_3D1D1BA5.wem		\Actor-Mixer Hierarchy\Default Work Unit\car\carEngine\low_off		10674
+	710223311	5	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\5_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\5		1710
+	750838162	Minimalist2	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\WAV\Minimalist2_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\ui\Minimalist2		10045
+	787034820	annie_hurt_done	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\annie_hurt_done_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\annieHurt\annie_hurt_done		8003
+	790066983	car_break	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\car-break-sound-effect_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\car\car_break		41284
+	809965621	coffeeshop_ambience	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\coffeeshop_ambience_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\background\Ambience\coffeeshopAmbience\coffeeshop_ambience		501084
+	819981975	2	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\2_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\2		2005
+	852040016	8	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\boots\8_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\concreteSteps\8		1832
+	872779969	groundstep5	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\steps\groundstep5_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\grassSteps\groundstep5		2908
+	910312138	startup	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\startup_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\car\startup		13431
+	915643029	pu_coin	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\pu_coin_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\pu_coin		4316
+	1063678928	groundstep4	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\steps\groundstep4_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\grassSteps\groundstep4		2797
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	843975111	suburbBackground	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\suburbBackground_10C4C929.wem	843975111.wem	\Actor-Mixer Hierarchy\Default Work Unit\background\Ambience\suburbAmbience\suburbBackground	
+	843975111	suburbBackground	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\SFX\suburbBackground_C1F52A07.wem	843975111.wem	\Actor-Mixer Hierarchy\Default Work Unit\background\Ambience\suburbAmbience\suburbBackground	
 
 Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
 	1051291759	HamburgStadtpark_Dense_Reflections_Stereo	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Mac\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01_E418B96C.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects Stereo\Exteriors\HamburgStadtpark_Dense_Reflections_Stereo	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms 	150656

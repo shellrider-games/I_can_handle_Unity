@@ -21,4 +21,9 @@ public class PlayerAudioManager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("jump", gameObject);
     }
+
+    public void PostHurtEvent()
+    {
+        AkSoundEngine.PostEvent("hurt", gameObject);
+    }
 }

@@ -8,7 +8,7 @@ public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private int maxHp;
     [SerializeField] private Image healthbar;
-    
+
     private int hp;
 
     private void Awake()

@@ -4,16 +4,17 @@ State Group	ID	Name			Wwise Object Path	Notes
 State	ID	Name	State Group			Notes
 	144697359	outdoor	Scene			
 	340398852	indoor	Scene			
-	748895195	None	Scene			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3319985400	betweenHousesReverb			\Default Work Unit\Master Audio Bus\betweenHousesReverb	
+	3536273778	Auro			\Default Work Unit\Master Audio Bus\Auro	
 	3641305797	coffeeshopReverb			\Default Work Unit\Master Audio Bus\coffeeshopReverb	
 
 Effect plug-ins	ID	Name	Type				Notes
+	129746433	Auro Headphone (Custom)	Auro Headphone			
 	2022941723	HamburgStadtpark_Dense_Reflections_Stereo	Wwise Convolution Reverb			Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms 
 	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
 

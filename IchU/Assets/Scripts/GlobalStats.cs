@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GlobalStats : MonoBehaviour
@@ -13,6 +14,8 @@ public class GlobalStats : MonoBehaviour
     private Image _healthbarImage;
     [SerializeField]
     private int maxHp = 3;
+
+    private PlayerAudioManager _playerAudioManager;
     
 
     private int hp;
@@ -28,8 +31,15 @@ public class GlobalStats : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        SceneManager.sceneLoaded += UpdatePlayerAudioMangerReference;
     }
 
+    private void UpdatePlayerAudioMangerReference(Scene _, LoadSceneMode __)
+    {
+        _playerAudioManager = FindObjectOfType<PlayerAudioManager>();
+    }
+    
     private void Start()
     {
         hp = maxHp;
@@ -41,6 +51,8 @@ public class GlobalStats : MonoBehaviour
         if (hp <= 0) return;
         hp--;
         _healthbarImage.fillAmount = hp / (float)maxHp;
+        if (_playerAudioManager is not null) _playerAudioManager.PostHurtEvent();
+
     }
 
     public void AddCoin()

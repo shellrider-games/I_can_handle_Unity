@@ -11,17 +11,18 @@
 	<StreamedFiles>
 		<File Id="843975111" Language="SFX">
 			<ShortName>suburbBackground.wav</ShortName>
-			<Path>SFX\suburbBackground_10C4C929.wem</Path>
+			<Path>SFX\suburbBackground_C1F52A07.wem</Path>
 		</File>
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2278809792">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2892841821">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
 				<AuxBus Id="3319985400" Name="betweenHousesReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\betweenHousesReverb"/>
+				<AuxBus Id="3536273778" Name="Auro" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Auro"/>
 				<AuxBus Id="3641305797" Name="coffeeshopReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\coffeeshopReverb"/>
 			</IncludedAuxBusses>
 			<ExcludedMemoryFiles>
@@ -31,24 +32,73 @@
 				</File>
 			</ExcludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="385330221">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1515036571">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2744306108" Name="car_start" ObjectPath="\Events\Default Work Unit\car_start" MaxAttenuation="100." DurationType="OneShot" DurationMin="2.916729" DurationMax="2.916729">
+				<Event Id="2744306108" Name="car_start" ObjectPath="\Events\Default Work Unit\car_start" MaxAttenuation="100." DurationType="OneShot" DurationMin="1.261769" DurationMax="1.261769">
 					<IncludedMemoryFiles>
-						<File Id="244004122" Language="SFX">
-							<ShortName>car_start.wav</ShortName>
-							<Path>SFX\car_start_10C4C929.wem</Path>
+						<File Id="910312138" Language="SFX">
+							<ShortName>startup.wav</ShortName>
+							<Path>SFX\startup_C1F52A07.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3536273778" Name="Auro" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Auro"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="998053453" Name="engine_off" ObjectPath="\Events\Default Work Unit\engine_off" MaxAttenuation="100." DurationType="OneShot" DurationMin="2.530975" DurationMax="2.530975">
+					<IncludedMemoryFiles>
+						<File Id="790066983" Language="SFX">
+							<ShortName>car-break-sound-effect.wav</ShortName>
+							<Path>SFX\car-break-sound-effect_C1F52A07.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3536273778" Name="Auro" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Auro"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2815678465" Name="engine_on" ObjectPath="\Events\Default Work Unit\engine_on" MaxAttenuation="100." DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="463449267" Language="SFX">
+							<ShortName>idle.wav</ShortName>
+							<Path>SFX\idle_3D1D1BA5.wem</Path>
+						</File>
+						<File Id="573977492" Language="SFX">
+							<ShortName>med_off.wav</ShortName>
+							<Path>SFX\med_off_3D1D1BA5.wem</Path>
+						</File>
+						<File Id="655151383" Language="SFX">
+							<ShortName>high_off.wav</ShortName>
+							<Path>SFX\high_off_3D1D1BA5.wem</Path>
+						</File>
+						<File Id="709641309" Language="SFX">
+							<ShortName>low_off.wav</ShortName>
+							<Path>SFX\low_off_3D1D1BA5.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3536273778" Name="Auro" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Auro"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3950631997" Name="hit_confirm" ObjectPath="\Events\Default Work Unit\hit_confirm" DurationType="OneShot" DurationMin="0.081325" DurationMax="0.115011">
 					<IncludedMemoryFiles>
 						<File Id="331851405" Language="SFX">
 							<ShortName>hit_confirm.wav</ShortName>
-							<Path>SFX\hit_confirm_10C4C929.wem</Path>
+							<Path>SFX\hit_confirm_C1F52A07.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3193947170" Name="hurt" ObjectPath="\Events\Default Work Unit\hurt" DurationType="OneShot" DurationMin="0.546715" DurationMax="0.891633">
+					<IncludedMemoryFiles>
+						<File Id="409112070" Language="SFX">
+							<ShortName>annie_hurt_done2.wav</ShortName>
+							<Path>SFX\annie_hurt_done2_C1F52A07.wem</Path>
+						</File>
+						<File Id="787034820" Language="SFX">
+							<ShortName>annie_hurt_done.wav</ShortName>
+							<Path>SFX\annie_hurt_done_C1F52A07.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -56,7 +106,7 @@
 					<IncludedMemoryFiles>
 						<File Id="436172419" Language="SFX">
 							<ShortName>annieJump.wav</ShortName>
-							<Path>SFX\annieJump_10C4C929.wem</Path>
+							<Path>SFX\annieJump_C1F52A07.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -64,13 +114,13 @@
 					<ReferencedStreamedFiles>
 						<File Id="843975111" Language="SFX">
 							<ShortName>suburbBackground.wav</ShortName>
-							<Path>SFX\suburbBackground_10C4C929.wem</Path>
+							<Path>SFX\suburbBackground_C1F52A07.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
 					<IncludedMemoryFiles>
 						<File Id="809965621" Language="SFX">
 							<ShortName>coffeeshop_ambience.wav</ShortName>
-							<Path>SFX\coffeeshop_ambience_10C4C929.wem</Path>
+							<Path>SFX\coffeeshop_ambience_C1F52A07.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -78,7 +128,7 @@
 					<IncludedMemoryFiles>
 						<File Id="915643029" Language="SFX">
 							<ShortName>pu_coin.wav</ShortName>
-							<Path>SFX\pu_coin_10C4C929.wem</Path>
+							<Path>SFX\pu_coin_C1F52A07.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -86,7 +136,7 @@
 					<IncludedMemoryFiles>
 						<File Id="290260826" Language="SFX">
 							<ShortName>shot.wav</ShortName>
-							<Path>SFX\shot_10C4C929.wem</Path>
+							<Path>SFX\shot_C1F52A07.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -94,59 +144,59 @@
 					<IncludedMemoryFiles>
 						<File Id="48274193" Language="SFX">
 							<ShortName>boots\0.wav</ShortName>
-							<Path>SFX\boots\0_10C4C929.wem</Path>
+							<Path>SFX\boots\0_C1F52A07.wem</Path>
 						</File>
 						<File Id="192013112" Language="SFX">
 							<ShortName>steps\groundstep3.wav</ShortName>
-							<Path>SFX\steps\groundstep3_10C4C929.wem</Path>
+							<Path>SFX\steps\groundstep3_C1F52A07.wem</Path>
 						</File>
 						<File Id="211972039" Language="SFX">
 							<ShortName>boots\4.wav</ShortName>
-							<Path>SFX\boots\4_10C4C929.wem</Path>
+							<Path>SFX\boots\4_C1F52A07.wem</Path>
 						</File>
 						<File Id="342539566" Language="SFX">
 							<ShortName>boots\6.wav</ShortName>
-							<Path>SFX\boots\6_10C4C929.wem</Path>
+							<Path>SFX\boots\6_C1F52A07.wem</Path>
 						</File>
 						<File Id="414578594" Language="SFX">
 							<ShortName>steps\groundstep2.wav</ShortName>
-							<Path>SFX\steps\groundstep2_10C4C929.wem</Path>
+							<Path>SFX\steps\groundstep2_C1F52A07.wem</Path>
 						</File>
 						<File Id="523786268" Language="SFX">
 							<ShortName>steps\groundstep1.wav</ShortName>
-							<Path>SFX\steps\groundstep1_10C4C929.wem</Path>
+							<Path>SFX\steps\groundstep1_C1F52A07.wem</Path>
 						</File>
 						<File Id="578610758" Language="SFX">
 							<ShortName>boots\3.wav</ShortName>
-							<Path>SFX\boots\3_10C4C929.wem</Path>
+							<Path>SFX\boots\3_C1F52A07.wem</Path>
 						</File>
 						<File Id="635765426" Language="SFX">
 							<ShortName>boots\1.wav</ShortName>
-							<Path>SFX\boots\1_10C4C929.wem</Path>
+							<Path>SFX\boots\1_C1F52A07.wem</Path>
 						</File>
 						<File Id="694653774" Language="SFX">
 							<ShortName>boots\7.wav</ShortName>
-							<Path>SFX\boots\7_10C4C929.wem</Path>
+							<Path>SFX\boots\7_C1F52A07.wem</Path>
 						</File>
 						<File Id="710223311" Language="SFX">
 							<ShortName>boots\5.wav</ShortName>
-							<Path>SFX\boots\5_10C4C929.wem</Path>
+							<Path>SFX\boots\5_C1F52A07.wem</Path>
 						</File>
 						<File Id="819981975" Language="SFX">
 							<ShortName>boots\2.wav</ShortName>
-							<Path>SFX\boots\2_10C4C929.wem</Path>
+							<Path>SFX\boots\2_C1F52A07.wem</Path>
 						</File>
 						<File Id="852040016" Language="SFX">
 							<ShortName>boots\8.wav</ShortName>
-							<Path>SFX\boots\8_10C4C929.wem</Path>
+							<Path>SFX\boots\8_C1F52A07.wem</Path>
 						</File>
 						<File Id="872779969" Language="SFX">
 							<ShortName>steps\groundstep5.wav</ShortName>
-							<Path>SFX\steps\groundstep5_10C4C929.wem</Path>
+							<Path>SFX\steps\groundstep5_C1F52A07.wem</Path>
 						</File>
 						<File Id="1063678928" Language="SFX">
 							<ShortName>steps\groundstep4.wav</ShortName>
-							<Path>SFX\steps\groundstep4_10C4C929.wem</Path>
+							<Path>SFX\steps\groundstep4_C1F52A07.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{E20310CB-4056-4F97-AA49-7A0E519DD20A}</DefaultSwitchValue>
@@ -179,13 +229,14 @@
 					<IncludedMemoryFiles>
 						<File Id="750838162" Language="SFX">
 							<ShortName>WAV\Minimalist2.wav</ShortName>
-							<Path>SFX\WAV\Minimalist2_10C4C929.wem</Path>
+							<Path>SFX\WAV\Minimalist2_C1F52A07.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
 			<IncludedAuxBusses>
 				<AuxBus Id="3319985400" Name="betweenHousesReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\betweenHousesReverb"/>
+				<AuxBus Id="3536273778" Name="Auro" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Auro"/>
 				<AuxBus Id="3641305797" Name="coffeeshopReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\coffeeshopReverb"/>
 			</IncludedAuxBusses>
 			<IncludedMemoryFiles>
@@ -196,6 +247,7 @@
 			</IncludedMemoryFiles>
 			<GameParameters>
 				<GameParameter Id="985024900" Name="coin_pickup_shift" ObjectPath="\Game Parameters\Default Work Unit\coin_pickup_shift"/>
+				<GameParameter Id="4164958897" Name="car_speed" ObjectPath="\Game Parameters\Default Work Unit\car_speed"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="2172358596" Name="stepArea" ObjectPath="\Switches\Default Work Unit\stepArea" GUID="{EDFB800E-DE03-4EE0-96F3-25F22000B623}">

@@ -26,6 +26,16 @@
 							</ReferenceList>
 							<ObjectLists/>
 						</AuxBus>
+						<AuxBus Name="Auro" ID="{130A02DC-8E9C-481E-9BFE-D41CDC7CD38C}">
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Auro Headphone (Custom)" ID="{BEAA58A3-4CED-4A2B-AB17-C66B0121A4E3}" ShortID="129746433" PluginName="Auro Headphone" CompanyID="263" PluginID="1100" PluginType="3"/>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</AuxBus>
 					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
