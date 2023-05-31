@@ -22,6 +22,19 @@ public class GlobalStats : MonoBehaviour
 
     private int coinPickupRTPC = 0;
     private IEnumerator coinCountdownCoroutine;
+
+    public bool CanHeal
+    {
+        get { return coins >= 5; }
+    }
+
+    public void Heal()
+    {
+        coins -= 5;
+        hp = maxHp;
+        _healthbarImage.fillAmount = hp / (float)maxHp;
+        UpdateCoinText();
+    }
     
     void Awake()
     {
@@ -33,7 +46,7 @@ public class GlobalStats : MonoBehaviour
 
         SceneManager.sceneLoaded += UpdatePlayerAudioMangerReference;
     }
-
+    
     private void UpdatePlayerAudioMangerReference(Scene _, LoadSceneMode __)
     {
         _playerAudioManager = FindObjectOfType<PlayerAudioManager>();
