@@ -138,6 +138,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="stop_ambience" ID="{685E06D2-D764-4772-BCCD-84C5A86D57E9}">
+					<ChildrenList>
+						<Action Name="" ID="{1A218B71-9DD3-46B4-9488-7527E0970A28}" ShortID="1038118268">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience" ID="{BE784135-C1AE-4C53-A994-10FB251809F5}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

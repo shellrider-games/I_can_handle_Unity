@@ -14,6 +14,8 @@
 						<ObjectRef Name="hurt" ID="{4F416407-2EF2-46AB-9F65-597484D97019}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ui_button_click" ID="{A0F74A11-5145-46FB-8B2B-F1D3D0617518}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="car_start" ID="{A0641517-A95E-476B-B7D8-5263179B82D1}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="stop_ambience" ID="{685E06D2-D764-4772-BCCD-84C5A86D57E9}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Auro" ID="{130A02DC-8E9C-481E-9BFE-D41CDC7CD38C}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="jump" ID="{E32B0F3D-61C2-484E-BB07-AD7D5E42A129}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="step" ID="{3DC50BDA-9454-4A55-A60D-F3ADEF065D67}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="engine_on" ID="{A944F986-D33B-4A68-B68E-83288C02C339}" WorkUnitID="{2A3D0B66-9460-4A1F-8719-A049DDC71F20}" Origin="Manual" Filter="7"/>

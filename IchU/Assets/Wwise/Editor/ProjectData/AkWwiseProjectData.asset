@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 79a7ecb108d6464290acfbd113ff6f2d
     GuidInternal: 
-    m_lastTime: -8585161405296344906
+    m_lastTime: -8585160894240734830
     List:
     - name: Main
       guid: 8a514115daa6414f8864390afd7cc184
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 660b3d2a60941f4a8719a049ddc71f20
     GuidInternal: 
-    m_lastTime: -8585161394255752112
+    m_lastTime: -8585160894392753578
     List:
     - name: car_start
       guid: 171564a05ea96b47b7d85263179b82d1
@@ -317,6 +317,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.298208
       minDuration: 0.129083
+    - name: stop_ambience
+      guid: d2065e6864d77247bccd84c5a86d57e9
+      id: 2477713992
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 660b3d2a60941f4a8719a049ddc71f20
+      - ElementName: stop_ambience
+        ObjectType: 3
+        guid: d2065e6864d77247bccd84c5a86d57e9
+      Path: Events\Default Work Unit\stop_ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: ui_button_click
       guid: 114af7a04551fb468b2bf1d3d0617518
       id: 1664509575
@@ -388,7 +405,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 3c0b10a9376f0b43adeb6732bd19012b
     GuidInternal: 
-    m_lastTime: -8585161396145923099
+    m_lastTime: -8585161359911924102
     List:
     - name: Scene
       guid: da94a8b6b3351349ab6eea057de04129
@@ -421,6 +438,22 @@ MonoBehaviour:
         - ElementName: indoor
           ObjectType: 8
           guid: 982dc46da80eb14ea4bbd66bb3662e41
+      - name: None
+        guid: dd7640434c3ca14e870ab800aeb9ed7c
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3c0b10a9376f0b43adeb6732bd19012b
+        - ElementName: Scene
+          ObjectType: 9
+          guid: da94a8b6b3351349ab6eea057de04129
+        - ElementName: None
+          ObjectType: 8
+          guid: dd7640434c3ca14e870ab800aeb9ed7c
       - name: outdoor
         guid: c89a6f66b1a89649894cab8359b57db1
         id: 144697359

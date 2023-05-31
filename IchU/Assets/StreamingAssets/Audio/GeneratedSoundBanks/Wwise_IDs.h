@@ -23,6 +23,7 @@ namespace AK
         static const AkUniqueID PU_COIN = 1806371972U;
         static const AkUniqueID SHOT = 251412229U;
         static const AkUniqueID STEP = 621108255U;
+        static const AkUniqueID STOP_AMBIENCE = 2477713992U;
         static const AkUniqueID UI_BUTTON_CLICK = 1664509575U;
     } // namespace EVENTS
 
@@ -35,6 +36,7 @@ namespace AK
             namespace STATE
             {
                 static const AkUniqueID INDOOR = 340398852U;
+                static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID OUTDOOR = 144697359U;
             } // namespace STATE
         } // namespace SCENE

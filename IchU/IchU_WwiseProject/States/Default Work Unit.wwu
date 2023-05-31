@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<StateGroup Name="Scene" ID="{B6A894DA-35B3-4913-AB6E-EA057DE04129}">
 					<ChildrenList>
+						<State Name="None" ID="{434076DD-3C4C-4EA1-870A-B800AEB9ED7C}"/>
 						<State Name="indoor" ID="{6DC42D98-0EA8-4EB1-A4BB-D66BB3662E41}"/>
 						<State Name="outdoor" ID="{666F9AC8-A8B1-4996-894C-AB8359B57DB1}"/>
 					</ChildrenList>

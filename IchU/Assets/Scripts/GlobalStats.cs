@@ -10,10 +10,9 @@ public class GlobalStats : MonoBehaviour
 {
     public static GlobalStats Instance;
     [SerializeField] private TextMeshProUGUI coinText;
-    [SerializeField]
-    private Image _healthbarImage;
-    [SerializeField]
-    private int maxHp = 3;
+    [SerializeField] private Image _healthbarImage;
+    [SerializeField] private int maxHp = 3;
+    [SerializeField] private GameObject uiCanvas;
 
     private PlayerAudioManager _playerAudioManager;
     
@@ -44,15 +43,34 @@ public class GlobalStats : MonoBehaviour
     {
         hp = maxHp;
         UpdateCoinText();
+        AkSoundEngine.PostEvent("play_ambience", gameObject);
     }
 
     public void Damage()
     {
-        if (hp <= 0) return;
+        
         hp--;
         _healthbarImage.fillAmount = hp / (float)maxHp;
         if (_playerAudioManager is not null) _playerAudioManager.PostHurtEvent();
+        if (hp <= 0)
+        {
+            uiCanvas.SetActive(false);
+            AkSoundEngine.PostEvent("stop_ambience", gameObject);
+            SceneManager.LoadSceneAsync("GameOver");
+        }
 
+    }
+
+    public void RestartGame()
+    {
+        hp = maxHp;
+        _healthbarImage.fillAmount = hp / (float)maxHp;
+        coins = 0;
+        UpdateCoinText();
+        coinPickupRTPC = 0;
+        uiCanvas.SetActive(true);
+        AkSoundEngine.PostEvent("play_ambience", gameObject);
+        SceneManager.LoadScene("Level1");
     }
 
     public void AddCoin()

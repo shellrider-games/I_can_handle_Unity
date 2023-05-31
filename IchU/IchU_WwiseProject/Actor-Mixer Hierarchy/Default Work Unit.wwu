@@ -1251,6 +1251,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="coffeeshop_ambience" ID="{082244EF-8BF8-4485-BA28-280B69703EB9}" ShortID="818990880">
+											<PropertyList>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
