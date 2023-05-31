@@ -20,6 +20,8 @@ public struct DialogueElements
 
 public class Dialogue : MonoBehaviour
 {
+    [SerializeField] private GameObject speaker;
+    
     [SerializeField] 
     private GameObject dialogueDisplay;
     [SerializeField] 
@@ -50,6 +52,7 @@ public class Dialogue : MonoBehaviour
 
     public void TryHeal()
     {
+        AkSoundEngine.PostEvent("babble", speaker.gameObject);
         if (GlobalStats.Instance.CanHeal)
         {
             GlobalStats.Instance.Heal();
@@ -67,6 +70,7 @@ public class Dialogue : MonoBehaviour
     
     public void LoadDialogueElements(int index)
     {
+        AkSoundEngine.PostEvent("babble", speaker.gameObject);
         Debug.Log(index);
         DialogueElements currentDialogueElements = dialogueElements[index];
         textElement.text = currentDialogueElements.dialogueText;

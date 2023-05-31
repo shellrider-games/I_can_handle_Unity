@@ -207,6 +207,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="babble" ID="{4FA1D67B-6C7E-4A38-AB0C-6D242B1F6F1F}">
+					<ChildrenList>
+						<Action Name="" ID="{8DD52E2B-A1B8-4A86-9172-7056C8689DC7}" ShortID="276899884">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="merchant" ID="{255FF162-4F43-4D31-AAAA-6D0D801D48D9}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

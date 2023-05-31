@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BABBLE = 4051581707U;
         static const AkUniqueID CAR_START = 2744306108U;
         static const AkUniqueID ENGINE_OFF = 998053453U;
         static const AkUniqueID ENGINE_ON = 2815678465U;

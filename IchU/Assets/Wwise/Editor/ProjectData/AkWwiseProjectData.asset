@@ -145,8 +145,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 660b3d2a60941f4a8719a049ddc71f20
     GuidInternal: 
-    m_lastTime: -8585160712164472036
+    m_lastTime: -8585160596601281721
     List:
+    - name: babble
+      guid: 7bd6a14f7e6c384aab0c6d242b1f6f1f
+      id: 4051581707
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 660b3d2a60941f4a8719a049ddc71f20
+      - ElementName: babble
+        ObjectType: 3
+        guid: 7bd6a14f7e6c384aab0c6d242b1f6f1f
+      Path: Events\Default Work Unit\babble
+      maxAttenuation: 100
+      maxDuration: 1.911396
+      minDuration: 1.911396
     - name: car_start
       guid: 171564a05ea96b47b7d85263179b82d1
       id: 2744306108
