@@ -1389,6 +1389,107 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</BlendContainer>
+						<RandomSequenceContainer Name="MenuMusic" ID="{9B0879DF-5FD0-40E5-B40E-044C57C0C7E9}" ShortID="982543375">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="menu_theme" ID="{419BCCD2-239C-4860-A1E6-9E8E8D83B557}" ShortID="873247289">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="menu_theme" ID="{0FBCB477-CA61-47A0-9073-E7FCBC93218E}">
+											<Language>SFX</Language>
+											<AudioFile>menu_theme.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1023331206"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="menu_theme" ID="{0FBCB477-CA61-47A0-9073-E7FCBC93218E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="GameOverMusic" ID="{5DE4C852-9AD6-41F1-A1D1-360A3273F61A}" ShortID="952775272">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sad_game_over" ID="{CD535EF8-DDAF-486C-9D20-4EDC995800B4}" ShortID="544266107">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{E50D96EC-DCF4-4087-BABF-F2C46F8F1643}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE64A458-CD6B-4A97-88BD-EE99908046E3}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sad_game_over" ID="{CDC4DFA7-5451-4B06-A3DF-F8AF7FAE8456}">
+											<Language>SFX</Language>
+											<AudioFile>sad_game_over.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="239411112"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="sad_game_over" ID="{CDC4DFA7-5451-4B06-A3DF-F8AF7FAE8456}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="steps" ID="{C61ACC20-A636-44DF-8771-66CCDC3ECAA0}" ShortID="922524602">

@@ -20,10 +20,14 @@ namespace AK
         static const AkUniqueID HURT = 3193947170U;
         static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID PLAY_AMBIENCE = 278617630U;
+        static const AkUniqueID PLAY_GAME_OVER = 725000905U;
+        static const AkUniqueID PLAY_MENU = 1278378707U;
         static const AkUniqueID PU_COIN = 1806371972U;
         static const AkUniqueID SHOT = 251412229U;
         static const AkUniqueID STEP = 621108255U;
         static const AkUniqueID STOP_AMBIENCE = 2477713992U;
+        static const AkUniqueID STOP_GAME_OVER = 4284147047U;
+        static const AkUniqueID STOP_MENU = 2914981333U;
         static const AkUniqueID UI_BUTTON_CLICK = 1664509575U;
     } // namespace EVENTS
 

@@ -2,15 +2,19 @@ Event	ID	Name			Wwise Object Path	Notes
 	251412229	shot			\Default Work Unit\shot	
 	278617630	play_ambience			\Default Work Unit\play_ambience	
 	621108255	step			\Default Work Unit\step	
+	725000905	play_game_over			\Default Work Unit\play_game_over	
 	998053453	engine_off			\Default Work Unit\engine_off	
+	1278378707	play_menu			\Default Work Unit\play_menu	
 	1664509575	ui_button_click			\Default Work Unit\ui_button_click	
 	1806371972	pu_coin			\Default Work Unit\pu_coin	
 	2477713992	stop_ambience			\Default Work Unit\stop_ambience	
 	2744306108	car_start			\Default Work Unit\car_start	
 	2815678465	engine_on			\Default Work Unit\engine_on	
+	2914981333	stop_menu			\Default Work Unit\stop_menu	
 	3193947170	hurt			\Default Work Unit\hurt	
 	3833651337	jump			\Default Work Unit\jump	
 	3950631997	hit_confirm			\Default Work Unit\hit_confirm	
+	4284147047	stop_game_over			\Default Work Unit\stop_game_over	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	2172358596	stepArea			\Default Work Unit\stepArea	
@@ -82,8 +86,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1063678928	groundstep4	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\steps\groundstep4_C1F52A07.wem		\Actor-Mixer Hierarchy\Default Work Unit\steps\stepSwitch\grassSteps\groundstep4		2797
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	239411112	sad_game_over	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\sad_game_over_C1F52A07.wem	239411112.wem	\Actor-Mixer Hierarchy\Default Work Unit\background\GameOverMusic\sad_game_over	
 	809965621	coffeeshop_ambience	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\coffeeshop_ambience_C1F52A07.wem	809965621.wem	\Actor-Mixer Hierarchy\Default Work Unit\background\Ambience\coffeeshopAmbience\coffeeshop_ambience	
 	843975111	suburbBackground	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\suburbBackground_C1F52A07.wem	843975111.wem	\Actor-Mixer Hierarchy\Default Work Unit\background\Ambience\suburbAmbience\suburbBackground	
+	1023331206	menu_theme	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\SFX\menu_theme_C1F52A07.wem	1023331206.wem	\Actor-Mixer Hierarchy\Default Work Unit\background\MenuMusic\menu_theme	
 
 Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
 	1051291759	HamburgStadtpark_Dense_Reflections_Stereo	G:\git\I_can_handle_Unity\IchU\IchU_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\AK_Factory_IR\Exteriors\AK Hamburg Stadtpark 01_E418B96C.wem	Wwise Convolution Reverb (Shared)	\Effects\Factory Convolution Reverb Effects Stereo\Exteriors\HamburgStadtpark_Dense_Reflections_Stereo	Impulse response created by Pinguin ing.büro © 2010 Pinguin ing.büro.  All rights reserved. IR Pre-delay: 8ms 	150656

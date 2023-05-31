@@ -117,7 +117,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 79a7ecb108d6464290acfbd113ff6f2d
     GuidInternal: 
-    m_lastTime: -8585160894240734830
+    m_lastTime: -8585160712067262211
     List:
     - name: Main
       guid: 8a514115daa6414f8864390afd7cc184
@@ -145,7 +145,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 660b3d2a60941f4a8719a049ddc71f20
     GuidInternal: 
-    m_lastTime: -8585160894392753578
+    m_lastTime: -8585160712164472036
     List:
     - name: car_start
       guid: 171564a05ea96b47b7d85263179b82d1
@@ -266,6 +266,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: play_game_over
+      guid: 3935f6bb3874f84bb19f209706d5e6aa
+      id: 725000905
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 660b3d2a60941f4a8719a049ddc71f20
+      - ElementName: play_game_over
+        ObjectType: 3
+        guid: 3935f6bb3874f84bb19f209706d5e6aa
+      Path: Events\Default Work Unit\play_game_over
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: play_menu
+      guid: 30377b82289b2e4cb06396f8441aa0ea
+      id: 1278378707
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 660b3d2a60941f4a8719a049ddc71f20
+      - ElementName: play_menu
+        ObjectType: 3
+        guid: 30377b82289b2e4cb06396f8441aa0ea
+      Path: Events\Default Work Unit\play_menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: pu_coin
       guid: 9fabc698c2c94e4481c293686027a53f
       id: 1806371972
@@ -331,6 +365,40 @@ MonoBehaviour:
         ObjectType: 3
         guid: d2065e6864d77247bccd84c5a86d57e9
       Path: Events\Default Work Unit\stop_ambience
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: stop_game_over
+      guid: 0ae3d944c6d2b041930f971c4c1f0646
+      id: 4284147047
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 660b3d2a60941f4a8719a049ddc71f20
+      - ElementName: stop_game_over
+        ObjectType: 3
+        guid: 0ae3d944c6d2b041930f971c4c1f0646
+      Path: Events\Default Work Unit\stop_game_over
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: stop_menu
+      guid: c09bb313b4488e43bcdb3e333cdfda43
+      id: 2914981333
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 660b3d2a60941f4a8719a049ddc71f20
+      - ElementName: stop_menu
+        ObjectType: 3
+        guid: c09bb313b4488e43bcdb3e333cdfda43
+      Path: Events\Default Work Unit\stop_menu
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
