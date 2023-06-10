@@ -145,10 +145,22 @@
 								<Property Name="ActionType" Type="int16" Value="2"/>
 								<Property Name="FadeOutCurve" Type="int16" Value="2"/>
 								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Ambience" ID="{BE784135-C1AE-4C53-A994-10FB251809F5}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{409ECB12-8A2B-4FFE-B6EB-A4BAF860C8A9}" ShortID="1070788159">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="carEngine" ID="{0DCFC0AC-81F2-4729-BFD5-4A52D478C71B}" WorkUnitID="{7F35FD8C-A263-45F2-91EC-85818F30DE0C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

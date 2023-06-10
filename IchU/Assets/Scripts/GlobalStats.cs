@@ -91,6 +91,11 @@ public class GlobalStats : MonoBehaviour
         coins++;
         UpdateCoinText();
         HandleCoinAudio();
+        if (coins >= 40)
+        {
+            AkSoundEngine.PostEvent("stop_ambience", gameObject);
+            SceneManager.LoadSceneAsync("Sucess");
+        }
     }
 
     private void HandleCoinAudio()
