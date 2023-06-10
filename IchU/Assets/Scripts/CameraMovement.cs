@@ -9,9 +9,15 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField] private float minimumDistanceToTarget;
     [SerializeField] private float maximumDistanceToTarget;
+
+    [SerializeField] private float minimumYOffset;
+    [SerializeField] private float maximumYOffset;
+    
     [SerializeField] private Vector3 cameraOffset;
     
+    
     [SerializeField] private float zoomSpeed = 0.01f;
+    [SerializeField] private float rotationSpeed = 0.01f;
 
     private float _distanceToTarget;
     private float _orbitAngle;
@@ -26,10 +32,28 @@ public class CameraMovement : MonoBehaviour
     {
         var inputVector = value.Get<Vector2>();
         _orbitAngle -= inputVector.x % 360;
+        CameraXRotation(inputVector);
+        
+    }
+
+    void OnCameraZoom(InputValue value)
+    {
+        var inputVector = value.Get<Vector2>();
+        Zoom(inputVector);
+    }
+
+    private void CameraXRotation(Vector2 inputVector)
+    {
+        cameraOffset.y = Mathf.Clamp(cameraOffset.y + inputVector.y * rotationSpeed, minimumYOffset, maximumYOffset);
+    }
+    
+    private void Zoom(Vector2 inputVector)
+    {
         float newDistance = _distanceToTarget - inputVector.y * zoomSpeed;
         if (newDistance >= minimumDistanceToTarget && newDistance <= maximumDistanceToTarget)
             _distanceToTarget = newDistance;
     }
+    
 
     private void Update()
     {

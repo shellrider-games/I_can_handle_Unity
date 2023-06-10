@@ -173,6 +173,15 @@
             "id": "fd594445-eb43-47e7-967f-3175ca6e1c89",
             "actions": [
                 {
+                    "name": "CameraZoom",
+                    "type": "Value",
+                    "id": "6c25c1e3-d689-49a0-a183-cd1946e44dab",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "CameraMovement",
                     "type": "Value",
                     "id": "34367a37-0295-4577-b47e-1c8c7c15361d",
@@ -213,6 +222,39 @@
                     "action": "Fire",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "One Modifier",
+                    "id": "f2bfbec0-ad64-4478-a770-f2f393add001",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraZoom",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "0ee7904b-d7bc-4dc7-98b7-d73bb72c0f5d",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraZoom",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "2b958d12-c47b-4192-981f-beb4d54ffdf3",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CameraZoom",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
